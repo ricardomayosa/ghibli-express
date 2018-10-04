@@ -1,0 +1,17 @@
+{{#if movies}}
+    <div class="container">
+        {{#each movies}}
+
+            <div class="card">
+                <h3>{{this.title}}</h3>
+                <p>{{this.description}}</p>
+                <p>Release year: {{this.release_date}}</p>
+                <p>Director: {{this.director}}</p>
+                <p>Producer: {{this.producer}}</p>
+                <p>Score: {{this.rt_score}}</p>
+            </div>
+        {{/each}}
+    </div>
+{{else}}
+    <p>Nope</p>
+{{/if}}
